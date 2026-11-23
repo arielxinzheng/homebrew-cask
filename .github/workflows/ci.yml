@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  cask:
+    name: Cask lint
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check cask syntax
+        run: |
+          set -euo pipefail
+          for f in Cask/*.rb; do
+            echo "== $f"
+            ruby -c "$f"
+          done
