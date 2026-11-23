@@ -7,8 +7,12 @@ a Starlink terminal monitor (latency, packet loss, obstruction map, alerting).
 
 ```bash
 brew tap arielxinzheng/cask
+brew trust arielxinzheng/cask        # Homebrew 7 asks you to trust third-party taps
 brew install --cask dishywarden
 ```
+
+The cask picks the disk image that matches the machine: `arm64` on Apple
+Silicon, `x64` on Intel.
 
 ## Update the cask
 
