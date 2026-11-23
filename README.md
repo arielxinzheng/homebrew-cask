@@ -6,7 +6,7 @@ a Starlink terminal monitor (latency, packet loss, obstruction map, alerting).
 ## Install
 
 ```bash
-brew tap arielxinzheng/homebrew-cask
+brew tap arielxinzheng/cask
 brew install --cask dishywarden
 ```
 

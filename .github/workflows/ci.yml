@@ -14,7 +14,7 @@ jobs:
       - name: Check cask syntax
         run: |
           set -euo pipefail
-          for f in Cask/*.rb; do
+          for f in Casks/*.rb; do
             echo "== $f"
             ruby -c "$f"
           done
